@@ -1,0 +1,131 @@
+body{
+	background-color: #9bd8ea;
+	font-family: 'Lobster', cursive;
+	font-weight: 100;
+}
+
+@Keyframes animacion{
+	from{transform: rotate(0deg); top: -300px; left: 0px;}
+	to {transform: rotate(360deg); top: 700px; left: 10px;}
+}
+
+@Keyframes animacion2{
+	from{transform: rotate(0deg); top: -300px; right: 0px;}
+	to {transform: rotate(-360deg); top: 700px; right: 10px;}
+}
+
+@Keyframes noel{
+	from{ top: 200px; left: -420px; }
+	to{ top: 200px; left: 30px; }
+}
+
+@Keyframes regalos{
+	0% { top: 520px; left: 510px ; visibility: hidden;}
+	50% { transform: rotate(-25deg); top: 520px; left: 510px ;  visibility: visible;}
+	75% { transform: rotate(25deg); top: 520px; left: 510px ;}
+	100% { transform: rotate(0deg); top: 520px; left: 510px;}
+}
+
+@Keyframes decorado{
+	0% {}
+	50% {background-color: red; color: white;}
+}
+
+@Keyframes decora2{
+	from {}
+	to {background-color: white;}
+}
+
+h1{
+	text-align: center;
+	background-color: white;
+	color: red;
+	animation: decorado 6s infinite;
+	animation-delay: 1s;
+
+}
+
+p{
+	margin-left: 20px;
+
+}
+
+.focus{
+	animation: decora2 6s infinite;
+	animation-delay: 1s;
+	display: inline;
+}
+
+.copos{
+	position: absolute;
+	width: 430px;
+	height: 300px;
+	top: -300px;
+	animation: animacion 6s 2;
+	animation-delay: 1.5s;
+	animation-timing-function: linear;
+}
+
+.copitos{
+	position: absolute;
+	width: 430px;
+	height: 300px;
+	top: -300px;
+	right: 20px;
+	animation: animacion2 6s 2;
+	animation-delay: 1.5s;
+	animation-timing-function: linear;
+}
+
+.noel{
+	position: absolute;
+	width: 350px;
+	height: 300px;
+	left: -420px;
+	animation: noel 3s 1;
+	animation-delay: 6s ;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.regalos{
+	position: absolute;
+	width: 160px;
+	height: 150px;
+	left: -420px;
+	animation: regalos 1.5s 2;
+	animation-delay: 3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	z-index: 200;
+}
+
+.carta{
+	position: static;
+	color: #6d8a0d;
+	padding-top: 1px;
+	background-color: #880015;
+	width: 550px;
+	height: 600px;	
+	font-size: 20px;
+	margin: 100px auto;
+	z-index: 100;
+}
+
+.arbol{
+	position: absolute;
+	top: 350px;
+	left: 650px;
+	z-index: 50;
+}
+
+.arbol:active{
+	visibility: hidden;
+}
+
+.decorado{
+	position: absolute;
+	top: 380px;
+	left: 670px;
+}
+
